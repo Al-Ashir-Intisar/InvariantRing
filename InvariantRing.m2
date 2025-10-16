@@ -108,12 +108,20 @@ export {
     "secondaryInvariants",    	  
     "Dade",    	       	       	  
     "DegreeVector",    	       	  
-    "PrintDegreePolynomial"    	  
-    }
+    "PrintDegreePolynomial",  
+
+    --PermutationGroups.m2
+    "permutationAction",
+    "permuteRows",
+    "permuteColumns"
+
+}
 
 needsPackage("Elimination")
 needsPackage("Normaliz")
 needsPackage("Polyhedra")
+needsPackage("Permutations")
+
 
 GroupAction = new Type of HashTable
 
@@ -141,6 +149,8 @@ load "./InvariantRing/Invariants.m2"
 
 load "./InvariantRing/Hawes.m2"
 
+load "./InvariantRing/PermutationGroups.m2"
+
 beginDocumentation()
 
 load "./InvariantRing/InvariantRingDoc.m2"
@@ -157,6 +167,7 @@ load "./InvariantRing/HawesDoc.m2"
 
 load "./InvariantRing/Tests.m2"
 
+load "./InvariantRing/PermutationGroupsDoc.m2"
 
 end
 
